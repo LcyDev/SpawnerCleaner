@@ -1,0 +1,16 @@
+
+# List of worlds where the plugin should remove spawners.
+worlds:
+  - world
+
+# Available modes:
+#    EVENT: If using paper (recommended) it will listen to spawners, if not it will also listen to entity spawn (not wanted).
+#    CHUNK: (Not implemented yet) Analyzes every loaded chunk in search of a spawner tile entity.
+mode: "EVENT"
+
+# The log level, can be one of the following:
+# SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST, ALL.
+# The default log level is INFO.
+# This will log all messages with the level or above.
+log-level: "INFO"
+
