@@ -49,6 +49,6 @@ tasks {
             relocate "io.papermc.lib", "io.lcydev.spawnercleaner.paperlib"
         }
 
-        archiveName("${providers.gradleProperty("plugin_name").get()}-${project.version}.jar")
+        archiveFileName.set("${providers.gradleProperty("plugin_name").get()}-${project.version}.jar")
     }
 }
