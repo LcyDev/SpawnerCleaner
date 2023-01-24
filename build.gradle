@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group = 'io.lcydev.SpawnerCleaner'
+version = providers.gradleProperty("plugin_version").get()
+description = providers.gradleProperty("plugin_description").get()
+
+ext {
+    lombokVersion = '1.18.24'
+    paperMCVersion = '1.19.2-R0.1-SNAPSHOT'
+    paperLibVersion = '1.0.8'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://papermc.io/repo/repository/maven-public/' }
+}
+
+dependencies {
+    compileOnly "io.papermc.paper:paper-api:$paperMCVersion"
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    implementation "io.papermc:paperlib:$paperLibVersion"
+
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+}
+
+tasks {
+    build {
+        dependsOn(shadowJar)
+    }
+
+    processResources {
+        filesMatching("plugin.yml") {
+            expand(project.properties)
+        }
+    }
+
+    shadowJar {
+        minimize {
+            relocate "io.papermc.lib", "io.lcydev.spawnercleaner.paperlib"
+        }
+
+        archiveName("${providers.gradleProperty("plugin_name").get()}-${project.version}.jar")
+    }
+}

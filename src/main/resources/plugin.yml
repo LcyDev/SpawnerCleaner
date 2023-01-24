@@ -1,0 +1,13 @@
+main: io.lcydev.spawnercleaner.SpawnerCleaner
+name: ${name}
+version: ${version}
+prefix: SpawnerCleaner
+author: LcyDev
+website: https://github.com/LcyDev/SpawnerCleaner
+load: POSTWORLD
+depend: []
+softdepend: []
+api-version: 1.19
+libraries: []
+
+description: '${description}'
