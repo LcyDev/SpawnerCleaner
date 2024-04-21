@@ -4,8 +4,8 @@ worlds: []
 
 # Available modes:
 #    EVENT: If using paper (recommended) it will listen to spawners, if not it will also listen to entity spawn (not wanted).
-#    CHUNK: (SOON) Analyzes every loaded chunk in search of a spawner tile entity.
-mode: "EVENT"
+#    CHUNK: When loading chunks, search inside spawners.
+mode: "CHUNK"
 
 # The log level, can be one of the following:
 # SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST, ALL.

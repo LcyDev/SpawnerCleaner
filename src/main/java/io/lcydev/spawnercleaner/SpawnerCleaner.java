@@ -1,8 +1,8 @@
 package io.lcydev.spawnercleaner;
 
 import io.lcydev.spawnercleaner.utils.Config;
-import io.lcydev.spawnercleaner.handlers.SpawnListener;
-import io.lcydev.spawnercleaner.handlers.SpawnerListener;
+import io.lcydev.spawnercleaner.listeners.SpawnerListener;
+import io.lcydev.spawnercleaner.listeners.PreSpawnerListener;
 import io.papermc.lib.PaperLib;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -45,16 +45,18 @@ public final class SpawnerCleaner extends JavaPlugin {
     }
 
     private void Initialize() {
+        Config config = Config.get();
         BukkitScheduler scheduler = Bukkit.getScheduler();
         PluginManager pluginManager = Bukkit.getPluginManager();
 
-
-        if (isPaper) {
-            pluginManager.registerEvents(new SpawnerListener(), this);
-        } else {
-            pluginManager.registerEvents(new SpawnListener(), this);
+        if (config.getMode().equalsIgnoreCase("EVENT")) {
+            if (isPaper) {
+                pluginManager.registerEvents(new PreSpawnerListener(), this);
+            } else {
+                pluginManager.registerEvents(new SpawnerListener(), this);
+            }
+        } else if (config.getMode().equalsIgnoreCase("CHUNK")) {
         }
-
         scheduler.scheduleSyncRepeatingTask(this, new RemoveTask(), 0L, 8L);
     }
 
