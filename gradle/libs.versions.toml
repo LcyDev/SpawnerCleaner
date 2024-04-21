@@ -1,0 +1,55 @@
+[versions]
+# Plugins
+kotlin = "1.9.23"
+shadow = "8.1.1"
+paperweight = "1.5.15"
+run-paper = "2.2.3"
+
+# Libraries
+kotlinx-coroutines = "1.8.0"
+configlib-yaml = "4.5.0"
+bstats = "3.0.2"
+
+twilight = "1.1.10"
+lamp = "3.2.1"
+cloud = "1.8.4"
+
+adventure = "4.16.0"
+adventure-platform-bukkit = "4.3.2"
+
+# External
+netty = "4.1.109.Final"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin"}
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines"}
+
+configlib-yaml = { module = "de.exlll:configlib-yaml", version.ref = "configlib-yaml"}
+
+bstats = { module = "org.bstats:bstats-bukkit", version.ref = "bstats" }
+
+twilight = { module = "gg.flyte:twilight", version.ref = "twilight" }
+
+cloud-paper = { module = "cloud.commandframework:cloud-paper", version.ref = "cloud" }
+cloud-annotations = { module = "cloud.commandframework:cloud-annotations", version.ref = "cloud" }
+
+lamp-common = { module = "com.github.Revxrsal.Lamp:common", version.ref = "lamp" }
+lamp-bukkit = { module = "com.github.Revxrsal.Lamp:bukkit", version.ref = "lamp" }
+lamp-brigadier = { module = "com.github.Revxrsal.Lamp:brigadier", version.ref = "lamp" }
+
+adventure-api = { module = "net.kyori:adventure-api", version.ref = "adventure" }
+adventure-text-minimessage = { module = "net.kyori:adventure-text-minimessage", version.ref = "adventure" }
+adventure-platform-bukkit = { module = "net.kyori:adventure-platform-bukkit", version.ref = "adventure-platform-bukkit" }
+
+# External dependencies
+netty-codec = { module = "io.netty:netty-codec-http", version.ref = "netty" }
+netty-codec-http = { module = "io.netty:netty-codec-http", version.ref = "netty" }
+netty-handler = { module = "io.netty:netty-handler", version.ref = "netty" }
+mysql-connector = { module = "com.mysql:mysql-connector-j", version = "8.3.0" }
+
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
+run-paper = { id = "xyz.jpenilla.run-paper", version.ref = "run-paper" }
