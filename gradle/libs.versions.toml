@@ -6,7 +6,7 @@ paperweight = "1.7.0"
 run-paper = "2.3.0"
 
 # Libraries
-kotlinx-coroutines = "1.8.0"
+kotlinx-coroutines = "1.8.1"
 configlib-yaml = "4.5.0"
 bstats = "3.0.2"
 
