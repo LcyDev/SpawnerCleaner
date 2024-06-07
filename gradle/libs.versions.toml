@@ -18,7 +18,7 @@ adventure = "4.17.0"
 adventure-platform-bukkit = "4.3.2"
 
 # External
-netty = "4.1.109.Final"
+netty = "4.1.110.Final"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin"}
