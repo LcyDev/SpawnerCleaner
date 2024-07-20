@@ -1,13 +1,21 @@
-main: io.lcydev.spawnercleaner.SpawnerCleaner
-name: ${name}
-version: ${version}
-prefix: SpawnerCleaner
-author: LcyDev
-website: https://github.com/LcyDev/SpawnerCleaner
+name: '${name}'
+main: io.lcydev.template.
+version: '${version}'
+api-version: '1.20'
+
+prefix: '${name}'
+authors: [LcyDev]
+contributors: []
+website: https://github.com/LcyDev
+
+description: '${description}'
+
 load: POSTWORLD
 depend: []
 softdepend: []
-api-version: 1.19
-libraries: []
+loadbefore: []
+libraries:
+  - 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlin_version}'
+  - 'org.jetbrains.kotlinx:kotlinx-coroutines-core:${kotlinx_coroutines_version}'
 
-description: '${description}'
+permissions: {}
