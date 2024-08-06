@@ -1,6 +1,6 @@
 [versions]
 # Plugins
-kotlin = "2.0.0"
+kotlin = "2.0.10"
 shadow = "8.1.1"
 paperweight = "1.7.1"
 run-paper = "2.3.0"
