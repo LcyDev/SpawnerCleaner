@@ -15,7 +15,7 @@ lamp = "3.2.1"
 cloud = "1.8.4"
 
 adventure = "4.17.0"
-adventure-platform-bukkit = "4.3.3"
+adventure-platform-bukkit = "4.3.4"
 
 # External
 netty = "4.1.112.Final"
