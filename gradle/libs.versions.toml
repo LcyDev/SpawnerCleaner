@@ -1,9 +1,9 @@
 [versions]
 # Plugins
-kotlin = "2.0.0"
+kotlin = "2.0.10"
 shadow = "8.1.1"
-paperweight = "1.7.1"
-run-paper = "2.3.0"
+paperweight = "1.7.2"
+run-paper = "2.3.1"
 
 # Libraries
 kotlinx-coroutines = "1.8.1"
@@ -15,10 +15,10 @@ lamp = "3.2.1"
 cloud = "1.8.4"
 
 adventure = "4.17.0"
-adventure-platform-bukkit = "4.3.3"
+adventure-platform-bukkit = "4.3.4"
 
 # External
-netty = "4.1.111.Final"
+netty = "4.1.112.Final"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin"}
