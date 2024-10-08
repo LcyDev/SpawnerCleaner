@@ -10,7 +10,7 @@ kotlinx-coroutines = "1.9.0"
 configlib-yaml = "4.5.0"
 bstats = "3.1.0"
 
-twilight = "1.1.13"
+twilight = "1.1.15"
 lamp = "3.3.0"
 cloud = "1.8.4"
 
