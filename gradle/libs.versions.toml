@@ -7,7 +7,7 @@ run-paper = "2.3.1"
 
 # Libraries
 kotlinx-coroutines = "1.10.2"
-configlib-yaml = "4.5.0"
+configlib-yaml = "4.6.0"
 bstats = "3.1.0"
 
 twilight = "1.1.19"
