@@ -14,7 +14,7 @@ twilight = "1.1.20"
 lamp = "3.3.6"
 cloud = "1.8.4"
 
-adventure = "4.21.0"
+adventure = "4.23.0"
 adventure-platform-bukkit = "4.4.0"
 
 # External
