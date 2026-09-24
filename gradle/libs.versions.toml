@@ -3,7 +3,7 @@
 kotlin = "2.4.20"
 shadow = "8.1.1"
 paperweight = "1.7.7"
-run-paper = "3.0.2"
+run-paper = "3.1.0"
 
 # Libraries
 kotlinx-coroutines = "1.10.2"
