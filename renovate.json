@@ -25,6 +25,7 @@
       "automerge": false
     },
     {
+      "groupName": "Kotlin ecosystem"
       "description": "Kotlin ecosystem",
       "matchPackageNames": [
         "org.jetbrains.kotlin:kotlin-gradle-plugin",
@@ -32,7 +33,6 @@
         "org.jetbrains.kotlinx:kotlinx-coroutines-core",
         "org.jetbrains.kotlinx:kotlinx-serialization-json"
       ],
-      "groupName": "Kotlin ecosystem"
     },
     {
       "groupName": "Testing dependencies",
