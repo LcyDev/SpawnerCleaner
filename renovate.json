@@ -33,6 +33,13 @@
         "org.jetbrains.kotlinx:kotlinx-serialization-json"
       ],
       "groupName": "Kotlin ecosystem"
+    },
+    {
+      "groupName": "Testing dependencies",
+      "matchPackageNames": [
+        "org.junit.jupiter:junit-jupiter",
+        "org.mockito:mockito-core"
+      ]
     }
   ]
 }
